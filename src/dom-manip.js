@@ -14,7 +14,7 @@ export function displayTheForm() {
 }
 
 export function addItemToCheckList() {
-    const addItem = document.getElementById("add-to-checklist").ariaValueMax;
+    const addItem = document.getElementById("add-to-checklist").value;
 
 
 // Run check to see if the input box is empy and button was clicked
