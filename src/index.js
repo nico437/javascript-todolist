@@ -1,4 +1,4 @@
-import generateToDo from './dom-manip'
+import { createToDo } from './create-to-do';
 import { blankProjectLoad } from './blank-project-load'
 import { displayDefaultProject, displayTheForm, addItemToCheckList, clearForm } from './dom-manip';
 import './style.css'
