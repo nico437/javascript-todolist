@@ -6,7 +6,6 @@ import './style.css'
 // Call blankProjectLoad on first land
 blankProjectLoad();
 
-console.log(blankProjectLoad())
 
 // Call DOM Manipulation module to load default project
 //displayDEfaultProject();
