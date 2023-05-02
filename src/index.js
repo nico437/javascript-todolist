@@ -24,4 +24,9 @@ let clickEventsModule = (function() {
     // Click event to clear the form
     const clearButton = document.querySelector(".reset-button");
     clearButton.addEventListener("click", clearForm);
+
+    // Click event to submit a new todo form to project
+    const submitButton = document.querySelector(".submit-button");
+    submitButton.addEventListener("click", createToDo);
+    
 })();
