@@ -30,7 +30,7 @@ export const createToDo = () => {
    }
    
    // Loop over the nodelist for Check List items from the DOM and format to string
-   const nodeListCheckList = document.querySelectorAll("li");
+   const nodeListCheckList = document.querySelectorAll(".form-li");
    let _CheckListArray = [];
    for (let i = 0; i < nodeListCheckList.length; i++) {
 

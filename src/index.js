@@ -1,6 +1,6 @@
 import { createToDo } from './create-to-do';
 import { blankProjectLoad } from './blank-project-load'
-import { displayDefaultProject, displayTheForm, addItemToCheckList, clearForm } from './dom-manip';
+import { displayDefaultProject, displayTheForm, addItemToCheckList, clearForm, displayToDo } from './dom-manip';
 import './style.css'
 
 // Call blankProjectLoad on first land
@@ -8,7 +8,10 @@ blankProjectLoad();
 
 
 // Call DOM Manipulation module to load default project
-//displayDEfaultProject();
+//displayDefaultProject();
+
+// Call displayToDo on first land - pulls from web local storage API (if any)
+displayToDo();
 
 // Click events module
 let clickEventsModule = (function() {
@@ -28,5 +31,5 @@ let clickEventsModule = (function() {
     // Click event to submit a new todo form to project
     const submitButton = document.querySelector(".submit-button");
     submitButton.addEventListener("click", createToDo);
-    
+
 })();
