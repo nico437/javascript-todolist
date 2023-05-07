@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "webpack"
   },
   "repository": {
@@ -16,9 +18,10 @@
   "bugs": {
     "url": "https://github.com/nico437/javascript-todolist/issues"
   },
-  "homepage": "https://github.com/nico437/javascript-todolist#readme",
+  "homepage": "https://github.com/nico437/nico437.github.io",
   "devDependencies": {
     "css-loader": "^6.7.3",
+    "gh-pages": "^5.0.0",
     "style-loader": "^3.3.2",
     "webpack": "^5.81.0",
     "webpack-cli": "^5.0.2",
